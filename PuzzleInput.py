@@ -11,7 +11,7 @@ class ReadInput:
             f.close()
             print("Reading File")
         except IOError:
-            link = "https://adventofcode.com/2019/day/%s/input" % day
+            link = "https://adventofcode.com/2015/day/%s/input" % day
             req = request.Request(link)
             req.add_header('Cookie', 'session=53616c7465645f5f5fd5983dbe5e3f1af2e4ba4828bed4482c300c055065bf646490dac542a8d0e218d849a86e50ff58')
             f = request.urlopen(req)
