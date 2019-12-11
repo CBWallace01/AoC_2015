@@ -36,9 +36,9 @@ def part_a():
 
 def part_b():
     conversions = [[x[1], x[0]] for x in [x.split(" => ") for x in pz_input[:-1]]]
-    conversions = [[x[1], x[0]] for x in [["e", "H"], ["e", "O"], ["H", "HO"], ["H", "OH"], ["O", "HH"]]]
+    # conversions = [[x[1], x[0]] for x in [["e", "H"], ["e", "O"], ["H", "HO"], ["H", "OH"], ["O", "HH"]]]
     molecule = pz_input[-1]
-    molecule = "HOHOHO"
+    # molecule = "HOHOHO"
     return try_replace(molecule, conversions) + 1
 
 
